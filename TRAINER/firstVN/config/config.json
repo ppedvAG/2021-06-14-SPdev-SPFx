@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "first-v-nwp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/firstVNwp/FirstVNwpWebPart.js",
+          "manifest": "./src/webparts/firstVNwp/FirstVNwpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FirstVNwpWebPartStrings": "lib/webparts/firstVNwp/loc/{locale}.js"
+  }
+}
