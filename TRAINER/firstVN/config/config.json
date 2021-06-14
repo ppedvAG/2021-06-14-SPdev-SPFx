@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/firstVNwp/FirstVNwpWebPart.manifest.json"
         }
       ]
+    },
+    "type-script-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/typeScriptVn/TypeScriptVnWebPart.js",
+          "manifest": "./src/webparts/typeScriptVn/TypeScriptVnWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "FirstVNwpWebPartStrings": "lib/webparts/firstVNwp/loc/{locale}.js"
+    "FirstVNwpWebPartStrings": "lib/webparts/firstVNwp/loc/{locale}.js",
+    "TypeScriptVnWebPartStrings": "lib/webparts/typeScriptVn/loc/{locale}.js"
   }
 }
