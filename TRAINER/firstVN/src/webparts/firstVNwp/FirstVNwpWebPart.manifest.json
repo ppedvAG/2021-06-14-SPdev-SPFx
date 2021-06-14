@@ -20,7 +20,11 @@
     "description": { "default": "first vn wp descr from yo" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "firstVNwp"
+      "description": "firstVNwp changed in manifest",     
+      "multiLiner": "multitext aus manifest",
+      "checkboxProp": true,
+      "toggleProp": true,
+      "dropdownProp": "lorem"
     }
   }]
 }

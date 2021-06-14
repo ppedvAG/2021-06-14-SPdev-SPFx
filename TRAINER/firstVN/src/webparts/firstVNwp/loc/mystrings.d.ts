@@ -6,5 +6,5 @@ declare interface IFirstVNwpWebPartStrings {
 
 declare module 'FirstVNwpWebPartStrings' {
   const strings: IFirstVNwpWebPartStrings;
-  export = strings;
+  export = strings;  
 }
