@@ -81,6 +81,8 @@ export default class SpHttpClientVnWebPart extends BaseClientSideWebPart<ISpHttp
     lists.forEach(list => {
       console.log('list.Title: ', list.Title)
       console.log('list: ', list)
+      
+      
       htmlString += `
       <li>${list.Title}</li>`
     })

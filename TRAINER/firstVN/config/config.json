@@ -41,6 +41,14 @@
           "manifest": "./src/webparts/reactWpVn/ReactWpVnWebPart.manifest.json"
         }
       ]
+    },
+    "termine-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/termineVn/TermineVnWebPart.js",
+          "manifest": "./src/webparts/termineVn/TermineVnWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -49,6 +57,7 @@
     "TypeScriptVnWebPartStrings": "lib/webparts/typeScriptVn/loc/{locale}.js",
     "ContextVnWebPartStrings": "lib/webparts/contextVn/loc/{locale}.js",
     "SpHttpClientVnWebPartStrings": "lib/webparts/spHttpClientVn/loc/{locale}.js",
-    "ReactWpVnWebPartStrings": "lib/webparts/reactWpVn/loc/{locale}.js"
+    "ReactWpVnWebPartStrings": "lib/webparts/reactWpVn/loc/{locale}.js",
+    "TermineVnWebPartStrings": "lib/webparts/termineVn/loc/{locale}.js"
   }
 }
