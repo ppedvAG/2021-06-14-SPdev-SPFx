@@ -79,6 +79,8 @@ export default class SpHttpClientVnWebPart extends BaseClientSideWebPart<ISpHttp
   private _buildAsyncHtml(lists: ISPList[]) {
     let htmlString = '<ol>';
     lists.forEach(list => {
+      console.log('list.Title: ', list.Title)
+      console.log('list: ', list)
       htmlString += `
       <li>${list.Title}</li>`
     })
