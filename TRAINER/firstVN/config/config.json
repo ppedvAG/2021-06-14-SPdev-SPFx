@@ -17,11 +17,29 @@
           "manifest": "./src/webparts/typeScriptVn/TypeScriptVnWebPart.manifest.json"
         }
       ]
+    },
+    "context-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/contextVn/ContextVnWebPart.js",
+          "manifest": "./src/webparts/contextVn/ContextVnWebPart.manifest.json"
+        }
+      ]
+    },
+    "sp-http-client-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spHttpClientVn/SpHttpClientVnWebPart.js",
+          "manifest": "./src/webparts/spHttpClientVn/SpHttpClientVnWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
     "FirstVNwpWebPartStrings": "lib/webparts/firstVNwp/loc/{locale}.js",
-    "TypeScriptVnWebPartStrings": "lib/webparts/typeScriptVn/loc/{locale}.js"
+    "TypeScriptVnWebPartStrings": "lib/webparts/typeScriptVn/loc/{locale}.js",
+    "ContextVnWebPartStrings": "lib/webparts/contextVn/loc/{locale}.js",
+    "SpHttpClientVnWebPartStrings": "lib/webparts/spHttpClientVn/loc/{locale}.js"
   }
 }
