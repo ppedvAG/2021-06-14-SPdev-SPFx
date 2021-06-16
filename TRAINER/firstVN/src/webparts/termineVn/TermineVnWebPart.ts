@@ -44,7 +44,7 @@ export default class TermineVnWebPart extends BaseClientSideWebPart<ITermineVnWe
   private _onGetTermine() {
     this._getTermine()
       .then(inhaltAusPromise => {
-        console.log('inhaltAusPromise: ', inhaltAusPromise); // inhaltAusPromise:  (3) [{…}, {…}, {…}], das Array ist da
+        // console.log('inhaltAusPromise: ', inhaltAusPromise); // inhaltAusPromise:  (3) [{…}, {…}, {…}], das Array ist da
         this._termine = inhaltAusPromise;
         this.render();
       })

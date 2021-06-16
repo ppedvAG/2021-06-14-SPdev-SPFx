@@ -17,6 +17,7 @@ export default class TermineVn extends React.Component < ITermineVnProps, {} > {
               <p className={styles.description}>Description: {escape(this.props.description)}</p>
               <h2>Termine</h2>
               <table id="termineTabelle">
+                {/* Meldung von React: ohne tbody ist html nicht valide */}
                 <tbody>
                 {this.props.termine.map(termin => {
                   return (<Termin key={termin.Id} Title={termin.Title} Datum={termin.Datum} Id={termin.Id}/>)
