@@ -49,6 +49,22 @@
           "manifest": "./src/webparts/termineVn/TermineVnWebPart.manifest.json"
         }
       ]
+    },
+    "ms-css-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/msCss/MsCssWebPart.js",
+          "manifest": "./src/webparts/msCss/MsCssWebPart.manifest.json"
+        }
+      ]
+    },
+    "graph-consumer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphConsumer/GraphConsumerWebPart.js",
+          "manifest": "./src/webparts/graphConsumer/GraphConsumerWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
@@ -58,6 +74,8 @@
     "ContextVnWebPartStrings": "lib/webparts/contextVn/loc/{locale}.js",
     "SpHttpClientVnWebPartStrings": "lib/webparts/spHttpClientVn/loc/{locale}.js",
     "ReactWpVnWebPartStrings": "lib/webparts/reactWpVn/loc/{locale}.js",
-    "TermineVnWebPartStrings": "lib/webparts/termineVn/loc/{locale}.js"
+    "TermineVnWebPartStrings": "lib/webparts/termineVn/loc/{locale}.js",
+    "MsCssWebPartStrings": "lib/webparts/msCss/loc/{locale}.js",
+    "GraphConsumerWebPartStrings": "lib/webparts/graphConsumer/loc/{locale}.js"
   }
 }
