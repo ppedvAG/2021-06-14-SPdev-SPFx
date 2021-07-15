@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "graph-consumer-kb-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphConsumerKb/GraphConsumerKbWebPart.js",
+          "manifest": "./src/webparts/graphConsumerKb/GraphConsumerKbWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GraphConsumerKbWebPartStrings": "lib/webparts/graphConsumerKb/loc/{locale}.js"
+  }
+}

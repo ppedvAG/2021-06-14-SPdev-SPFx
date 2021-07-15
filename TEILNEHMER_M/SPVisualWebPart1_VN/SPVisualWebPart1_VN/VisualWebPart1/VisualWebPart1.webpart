@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SPVisualWebPart1_VN.VisualWebPart1.VisualWebPart1, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SPVisualWebPart1_VN - VisualWebPart1</property>
+        <property name="Description" type="string">Mein Visuelles Webpart</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

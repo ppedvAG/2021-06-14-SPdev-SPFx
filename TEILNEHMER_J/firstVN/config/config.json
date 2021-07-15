@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "first-v-nwp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/firstVNwp/FirstVNwpWebPart.js",
+          "manifest": "./src/webparts/firstVNwp/FirstVNwpWebPart.manifest.json"
+        }
+      ]
+    },
+    "type-script-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/typeScriptVn/TypeScriptVnWebPart.js",
+          "manifest": "./src/webparts/typeScriptVn/TypeScriptVnWebPart.manifest.json"
+        }
+      ]
+    },
+    "context-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/contextVn/ContextVnWebPart.js",
+          "manifest": "./src/webparts/contextVn/ContextVnWebPart.manifest.json"
+        }
+      ]
+    },
+    "sp-http-client-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spHttpClientVn/SpHttpClientVnWebPart.js",
+          "manifest": "./src/webparts/spHttpClientVn/SpHttpClientVnWebPart.manifest.json"
+        }
+      ]
+    },
+    "react-wp-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactWpVn/ReactWpVnWebPart.js",
+          "manifest": "./src/webparts/reactWpVn/ReactWpVnWebPart.manifest.json"
+        }
+      ]
+    },
+    "termine-vn-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/termineVn/TermineVnWebPart.js",
+          "manifest": "./src/webparts/termineVn/TermineVnWebPart.manifest.json"
+        }
+      ]
+    },
+    "ms-css-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/msCss/MsCssWebPart.js",
+          "manifest": "./src/webparts/msCss/MsCssWebPart.manifest.json"
+        }
+      ]
+    },
+    "graph-consumer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphConsumer/GraphConsumerWebPart.js",
+          "manifest": "./src/webparts/graphConsumer/GraphConsumerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FirstVNwpWebPartStrings": "lib/webparts/firstVNwp/loc/{locale}.js",
+    "TypeScriptVnWebPartStrings": "lib/webparts/typeScriptVn/loc/{locale}.js",
+    "ContextVnWebPartStrings": "lib/webparts/contextVn/loc/{locale}.js",
+    "SpHttpClientVnWebPartStrings": "lib/webparts/spHttpClientVn/loc/{locale}.js",
+    "ReactWpVnWebPartStrings": "lib/webparts/reactWpVn/loc/{locale}.js",
+    "TermineVnWebPartStrings": "lib/webparts/termineVn/loc/{locale}.js",
+    "MsCssWebPartStrings": "lib/webparts/msCss/loc/{locale}.js",
+    "GraphConsumerWebPartStrings": "lib/webparts/graphConsumer/loc/{locale}.js"
+  }
+}

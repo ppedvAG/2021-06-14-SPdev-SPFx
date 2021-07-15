@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+/*       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx", */ 
+     "pageUrl": "https://naumchyk.sharepoint.com/sites/naumchyk/Lists/Termine/AllItems.aspx",
+      "customActions": {
+        "580cf6a4-a194-43ef-bea2-1c279c1c06d0": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "appCstmzVn": {
+      /* "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx", */
+      "pageUrl": "https://naumchyk.sharepoint.com/sites/naumchyk/Lists/Termine/AllItems.aspx",
+      "customActions": {
+        "580cf6a4-a194-43ef-bea2-1c279c1c06d0": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
