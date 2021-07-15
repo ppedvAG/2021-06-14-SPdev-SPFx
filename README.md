@@ -79,14 +79,16 @@ Format: Vollzeit
   - [ ] [AppCsmzVnApplicationCustomizer.ts](TRAINER/ExtensionsVN/src/extensions/appCstmzVn/AppCstmzVnApplicationCustomizer.ts)
   - [ ] [MsCssWebPart.ts](TRAINER/firstVN/src/webparts/msCss/MsCssWebPart.ts)
 
-## add-ins
-
 ## asp.net web forms
 
 - web forms controls
 - sind gut für provider-hosted SP Add-Ins
 
 ## taxonomie context (Marko)
+
+- web part für zugriff zu termStore entwickeln
+
+## add-ins
 
 ## c sharp
 
