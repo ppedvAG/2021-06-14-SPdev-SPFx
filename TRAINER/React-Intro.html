@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <title>React Intro</title>
+</head>
+
+<body>
+    <h1>REACT INTRO</h1>
+
+    <p id="myParagraph">P in HTML</p>
+
+    <h2>React P</h2>
+    <div id="myDivision1"></div>
+
+    <h2>Classic P</h2>
+    <div id="myDivision2"></div>
+
+    <script>
+        console.log('myParagraph: ', myParagraph);
+        for (let key in myParagraph) {
+            console.log(key);
+            console.log(myParagraph[key]);
+        }
+        // Anlegen von React-Elementen (Eine von Optionen)
+        const reactParagraph = React.createElement('p', {id: 'reactParagraphID'}, 'Text im react Paragraph');
+        console.log('reactParagraph: ', reactParagraph);
+        ReactDOM.render(reactParagraph, myDivision1);
+
+        // Anlegen von elementen im klassischen DOM
+        const classicParagraph = document.createElement('p', {id: 'classicParagraphID'});
+        const textForClassicP = document.createTextNode('Text in classic Paragraph');
+        classicParagraph.appendChild(textForClassicP);
+        myDivision2.appendChild(classicParagraph);
+
+
+    </script>
+
+</body>
+
+</html>
