@@ -79,16 +79,16 @@ Format: Vollzeit
   - [ ] [AppCsmzVnApplicationCustomizer.ts](TRAINER/ExtensionsVN/src/extensions/appCstmzVn/AppCstmzVnApplicationCustomizer.ts)
   - [ ] [MsCssWebPart.ts](TRAINER/firstVN/src/webparts/msCss/MsCssWebPart.ts)
 
-## asp.net web forms
-
-- web forms controls
-- sind gut für provider-hosted SP Add-Ins
-
 ## taxonomie context (Marko)
 
 - web part für zugriff zu termStore entwickeln
 
 ## add-ins
+
+- [x] Zugriff auf SP Admin Center
+- [x] DevSite
+- [ ] debuggen durch devsite fehlgeschlagen
+- [ ] erneutes publishing fehlgeschlagen
 
 ## c sharp
 
@@ -97,6 +97,7 @@ Format: Vollzeit
 - Layout von Objekten
 - Masterpage. Folie: ### MASTERPAGE
   - siehe auch ASP.NET Web Forms Kurs bei PPEDV > MasterPages erstellen
+- asp.net web forms controls (sind gut für provider-hosted SP Add-Ins)
 
 ## site templates
 
@@ -105,3 +106,5 @@ Format: Vollzeit
 ![sites operations](TRAINER/m00x-1.png)
 
 ## ausblick powerapps und flow
+
+- OnboardingPowerApp

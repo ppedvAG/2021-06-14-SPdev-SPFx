@@ -42,10 +42,19 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Lists\MitarbeiterEinarbeitung\Elements.xml" />
+    <Content Include="Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInBerlin\Elements.xml" />
+    <Content Include="Lists\MitarbeiterEinarbeitung\Schema.xml" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
+    <None Include="Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInBerlin\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b300f9a3-253a-45aa-90cb-23eb85b588aa}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MitarbeiterEinarbeitung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{29e5fcba-f078-45ba-b07b-e67b69dd8524}</SharePointProjectItemId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{95ac7454-76e8-4936-abdc-6b3841020533}</SharePointProjectItemId>
@@ -85,11 +94,11 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
+    <None Include="Features\NeueMitarbeitereinarbeitungKomponenten\NeueMitarbeitereinarbeitungKomponenten.feature">
       <FeatureId>{ce0ffd00-a27a-45ff-b7ef-1b4731c60010}</FeatureId>
     </None>
-    <None Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <None Include="Features\NeueMitarbeitereinarbeitungKomponenten\NeueMitarbeitereinarbeitungKomponenten.Template.xml">
+      <DependentUpon>NeueMitarbeitereinarbeitungKomponenten.feature</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

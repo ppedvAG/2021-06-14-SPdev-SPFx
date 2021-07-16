@@ -21,7 +21,7 @@
 
 <%-- Das Markup im folgenden Content-Element wird im "TitleArea" der Seite platziert. --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Page Title
+    Einarbeitung neuer Mitarbeiter je nach Standort
 </asp:Content>
 
 <%-- Markup und Skript im folgenden Content-Element werden im <body> der Seite platziert. --%>
@@ -33,5 +33,11 @@
             initializing...
         </p>
     </div>
+    <p>
+        <asp:HyperLink 
+            runat="server"
+            NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/MitarbeiterEinarbeitungInBerlin/AllItems.aspx';"
+            Text="Neue Mitarbeiter in Berlin"/>
+    </p>
 
 </asp:Content>
