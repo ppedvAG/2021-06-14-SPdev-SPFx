@@ -1,59 +1,109 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" Title="MitarbeiterEinarbatung" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MitarbeiterEinarbatung" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
-  <MetaData>
-    <ContentTypes>
-      
-      
-    <ContentType ID="0x01004de42c64a6e64f589228c872f7643377" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{753d85ef-d193-4dee-8f58-13398e430754}" Name="Titel" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
-        <Folder TargetName="Item" />
-      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
-    <Fields>
-      
-    <Field Name="Titel" ID="{753d85ef-d193-4dee-8f58-13398e430754}" DisplayName="Titel" Type="Text" Required="TRUE" /></Fields>
-    <Views>
-      
-      
-    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
-        <Toolbar Type="Standard" />
-        <XslLink Default="TRUE">main.xsl</XslLink>
-        <RowLimit Paged="TRUE">30</RowLimit>
-        <ViewFields>          
-        
-		<FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="Mitarbeiter">
-		</FieldRef></ViewFields>
-        <Query>
-          <OrderBy>
-            
-          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
-        </Query>
-        <ParameterBindings>
-          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
-          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
-          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
-        </ParameterBindings>
-      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
-        <Toolbar Type="Standard" />
-        <XslLink Default="TRUE">main.xsl</XslLink>
-        <JSLink>clienttemplates.js</JSLink>
-        <RowLimit Paged="TRUE">30</RowLimit>
-        <ViewFields>        
-            
-		<FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="Mitarbeiter">				
-			</FieldRef><FieldRef Name="Titel" /></ViewFields>
-        <Query>
-          <OrderBy>
-            
-          <FieldRef Name="ID"></FieldRef></OrderBy>
-        </Query>
-        <ParameterBindings>
-          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
-          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
-        </ParameterBindings>
-      </View></Views>
-    <Forms>
-      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
-      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
-      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
-    </Forms>
-  </MetaData>
+<List xmlns:ows="Microsoft SharePoint" Title="MitarbeiterEinarbatung" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MitarbeiterEinarbatung" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+	<MetaData>
+		<ContentTypes>
+
+			<ContentType
+				ID="0x010076B15B032B7F457A8CAA19DCDA8BAEA4"
+				Name="NeuerMitarbeiter"
+				Group="Mitarbeiter Einarbeitung"
+				Description="Repräsentiert einen neuen Mitarbeiter"
+				Inherits="FALSE"
+				Version="0">
+
+				<FieldRefs>
+					<!--{82642ec8-ef9b-478f-acf9-31f7d45fbc31} ist auch im Schema.xml bei LinkTitle zu finden (todo) -->
+					<!-- Die IDs bei LinkTitle und Title sind eingebaute GUIDs. Nicht ändern -->
+					<FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="Mitarbeiter" />
+					<!--Referenz zu FieldRef: https://docs.microsoft.com/de-de/sharepoint/dev/schema/fieldref-element-contenttype (todo) -->
+					<FieldRef Name="Title" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" DisplayName="Mitarbeiter" />
+					<!--{fa564e0f-0c70-4ab9-b863-0177e6ddd247} ist auch im Schema.xml bei Title zu finden (todo) -->
+					<FieldRef ID="{1c9ca8bb-36e9-4d40-992d-21c052595ead}" DisplayName="Abteilung" Required="FALSE" Description="Abteilung in der der Mitarbeiter tätig ist" Name="Abteilung" />
+					<FieldRef ID="{3ad91e63-8f5b-4d11-8677-0f60926261a6}" DisplayName="Einarbeitung Fortschritt" Required="TRUE" Description="Aktueller Fortschritt bei der Einarbeitung" Name="EinarbeitungFortschritt" />
+				</FieldRefs>
+			</ContentType>
+		</ContentTypes>
+
+		<!-- Inhalte aus elements.xml Dateien bei Spalten und Inhaltstypen sind im schema.xml gesammelt (todo) -->
+		<Fields>
+
+			<Field Name="Titel" ID="{753d85ef-d193-4dee-8f58-13398e430754}" DisplayName="Titel" Type="Text" Required="TRUE" />
+			<Field ID="{1c9ca8bb-36e9-4d40-992d-21c052595ead}" Name="Abteilung" Title="Abteilung" DisplayName="Abteilung" Description="Abteilung in der der Mitarbeiter tätig ist"
+				   Type="Text" Group="Mitarbeiter Einarbeitung" Required="FALSE"></Field>
+
+			<Field ID="{3ad91e63-8f5b-4d11-8677-0f60926261a6}" Name="EinarbeitungFortschritt" DisplayName="Einarbeitung Fortschritt" Group="Mitarbeiter Einarbeitung" Description="Aktueller Fortschritt bei der Einarbeitung" Type="Choice" Required="TRUE">
+				<CHOICES>
+					<CHOICE>Nicht gestartet</CHOICE>
+					<CHOICE>Büro Besichtigung</CHOICE>
+					<CHOICE>HR Papierkram</CHOICE>
+					<CHOICE>Zugang zum Intranet</CHOICE>
+					<CHOICE>Abgeschlossen</CHOICE>
+				</CHOICES>
+				<MAPPINGS>
+					<MAPPING Value="1">Nicht gestartet</MAPPING>
+					<MAPPING Value="2">Büro Besichtigung</MAPPING>
+					<MAPPING Value="3">HR Papierkramk</MAPPING>
+					<MAPPING Value="4">Zugang zum Intranet</MAPPING>
+					<MAPPING Value="5">Abgeschlossen</MAPPING>
+				</MAPPINGS>
+				<Default>Nicht gestartet</Default>
+			</Field>
+		</Fields>
+		<Views>
+
+			<!-- BASE VIEW 0 -->
+			<View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+				<Toolbar Type="Standard" />
+				<XslLink Default="TRUE">main.xsl</XslLink>
+				<RowLimit Paged="TRUE">30</RowLimit>
+				<ViewFields>
+					<FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="Mitarbeiter">
+						<!-- gleiche ID muss auch beim ContentType für diese Liste angegeben werden (todo)-->
+					</FieldRef>
+					<FieldRef Name="Abteilung" ID="{1c9ca8bb-36e9-4d40-992d-21c052595ead}" />
+					<FieldRef Name="EinarbeitungFortschritt" ID="{3ad91e63-8f5b-4d11-8677-0f60926261a6}"/>
+				</ViewFields>
+				<Query>
+					<OrderBy>
+
+						<FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+					</OrderBy>
+				</Query>
+				<ParameterBindings>
+					<ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+					<ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+					<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+				</ParameterBindings>
+			</View>
+			<!-- BASE VIEW 1 -->
+			<View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+				<Toolbar Type="Standard" />
+				<XslLink Default="TRUE">main.xsl</XslLink>
+				<JSLink>clienttemplates.js</JSLink>
+				<RowLimit Paged="TRUE">30</RowLimit>
+				<ViewFields>
+					<FieldRef Name="LinkTitle" ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="Mitarbeiter">
+						<!-- gleiche ID muss auch beim ContentType für diese Liste angegeben werden (todo)-->
+					</FieldRef>
+					<FieldRef Name="Abteilung" ID="{1c9ca8bb-36e9-4d40-992d-21c052595ead}" />
+					<FieldRef Name="EinarbeitungFortschritt" ID="{3ad91e63-8f5b-4d11-8677-0f60926261a6}"/>
+				</ViewFields>
+				<Query>
+					<OrderBy>
+
+						<FieldRef Name="ID"></FieldRef>
+					</OrderBy>
+				</Query>
+				<ParameterBindings>
+					<ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+					<ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+				</ParameterBindings>
+			</View>
+		</Views>
+		<Forms>
+			<Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+			<Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+			<Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+		</Forms>
+	</MetaData>
 </List>

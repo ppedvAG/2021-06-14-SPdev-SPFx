@@ -42,6 +42,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="ContentTypes\NeuerMitarbeiter\Elements.xml" />
     <Content Include="Lists\MitarbeiterEinarbeitung\Elements.xml" />
     <Content Include="Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInBerlin\Elements.xml" />
     <Content Include="Lists\MitarbeiterEinarbeitung\Schema.xml" />
@@ -51,6 +52,9 @@
     <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
     <Content Include="SiteColumns\Abteilung\Elements.xml" />
     <Content Include="SiteColumns\EinarbeitungFortschritt\Elements.xml" />
+    <None Include="ContentTypes\NeuerMitarbeiter\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{af121102-0560-4853-a0b7-671bfae1a7ad}</SharePointProjectItemId>
+    </None>
     <None Include="Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInBerlin\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{053cad85-1adc-4469-82cf-938f5bd43e94}</SharePointProjectItemId>
     </None>

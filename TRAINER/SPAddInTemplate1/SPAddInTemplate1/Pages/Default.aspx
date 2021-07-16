@@ -41,5 +41,6 @@
             NavigateUrl="JavaScript:window.location = _spPageContextInfo.webAbsoluteUrl + '/Lists/MitarbeiterEinarbeitungInBerlin/AllItems.aspx';"
             Text="Neue Mitarbeiter in Berlin"/>
     </p>
+    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" ID="HomePage1" Title="loc:full" />
 
 </asp:Content>
