@@ -79,21 +79,25 @@ Format: Vollzeit
   - [ ] [AppCsmzVnApplicationCustomizer.ts](TRAINER/ExtensionsVN/src/extensions/appCstmzVn/AppCstmzVnApplicationCustomizer.ts)
   - [ ] [MsCssWebPart.ts](TRAINER/firstVN/src/webparts/msCss/MsCssWebPart.ts)
 
+## taxonomie context (Marko)
+
+- web part für zugriff zu termStore entwickeln
+
 ## add-ins
 
-## asp.net web forms
+- [x] Zugriff auf SP Admin Center
+- [x] DevSite
+- [ ] debuggen durch devsite fehlgeschlagen
+- [ ] erneutes publishing fehlgeschlagen
 
-- web forms controls
-- sind gut für provider-hosted SP Add-Ins
-
-## graph taxonomie api (Marko)
+## c sharp
 
 ## bestehende Seiten und Intranet anpassen
 
 - Layout von Objekten
 - Masterpage. Folie: ### MASTERPAGE
   - siehe auch ASP.NET Web Forms Kurs bei PPEDV > MasterPages erstellen
-- Masterpage über SPDesigner
+- asp.net web forms controls (sind gut für provider-hosted SP Add-Ins)
 
 ## web service for sites
 
@@ -103,19 +107,4 @@ Format: Vollzeit
 
 ## ausblick powerapps und flow
 
-## Migration
-
-- zugriff aus wsp (vs vorlagen) 
-- webparts / features in vs datentypen und react pakete
-- sp2019 zu spo schritte
-
-## c sharp ?
-
-## jQuery ?
-
-## sites web service
-
-- [http://hv-sharepoint/_vti_bin/sites.asmx]
-  
-bei soap - xml, kein json
-in soap kann man sicherheitsrichtlinien bei requests mitdefinieren.
+- OnboardingPowerApp
