@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1c9ca8bb-36e9-4d40-992d-21c052595ead}"
+       Name="Abteilung"
+	   Title="Abteilung"
+       DisplayName="Abteilung"
+	   Description="Abteilung, in der der Mitarbeiter tätig ist"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

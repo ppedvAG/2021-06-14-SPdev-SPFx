@@ -90,8 +90,6 @@ Format: Vollzeit
 - [ ] debuggen durch devsite fehlgeschlagen
 - [ ] erneutes publishing fehlgeschlagen
 
-## c sharp
-
 ## bestehende Seiten und Intranet anpassen
 
 - Layout von Objekten
@@ -99,12 +97,25 @@ Format: Vollzeit
   - siehe auch ASP.NET Web Forms Kurs bei PPEDV > MasterPages erstellen
 - asp.net web forms controls (sind gut für provider-hosted SP Add-Ins)
 
-## web service for sites
+## sp web services
 
 [https://naumchyk.sharepoint.com/_vti_bin/sites.asmx]
 
 ![sites operations](TRAINER/m00x-1.png)
 
+- bei soap - xml, kein json
+- in soap kann man sicherheitsrichtlinien bei requests mitdefinieren
+
 ## ausblick powerapps und flow
 
 - OnboardingPowerApp
+
+## jQuery 
+
+## c sharp
+
+## Migration
+
+- Zugriff aus wsp (vs vorlagen)
+- webparts / features in vs datentypen und react pakete
+- schritte bei sp2019 zu spo
