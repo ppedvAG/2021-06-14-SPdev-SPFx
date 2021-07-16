@@ -42,10 +42,21 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Lists\MitarbeiterEinarbeitung\Elements.xml" />
+    <Content Include="..\..\..\..\..\Desktop\Elements.xml">
+      <Link>Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInstance\Elements.xml</Link>
+    </Content>
+    <Content Include="Lists\MitarbeiterEinarbeitung\Schema.xml" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
+    <None Include="Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{66e999ca-b029-420e-888c-38420e2e0f0a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MitarbeiterEinarbeitung\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e9d9fd76-e60b-41c7-af24-e229b7790e07}</SharePointProjectItemId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{815ee9ad-248b-4a3c-9260-4a51f5a3a842}</SharePointProjectItemId>
@@ -97,6 +108,7 @@
       <SubType>Designer</SubType>
     </AppManifestFile>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

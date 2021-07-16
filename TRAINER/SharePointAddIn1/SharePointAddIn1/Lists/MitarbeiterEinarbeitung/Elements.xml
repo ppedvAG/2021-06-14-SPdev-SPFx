@@ -2,7 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <!-- Ändern Sie nicht den Wert des Namensattributs unten. Wenn der Name nicht mit dem Ordnernamen des Listenprojektelements übereinstimmt, tritt bei der Ausführung des Projekts ein Fehler auf. -->
     <ListTemplate
-        Name="MitarbeiterEinarbatung"
+        Name="MitarbeiterEinarbeitung"
         Type="100"
         BaseType="0"
         OnQuickLaunch="TRUE"
