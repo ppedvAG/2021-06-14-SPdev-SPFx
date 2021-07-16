@@ -86,20 +86,36 @@ Format: Vollzeit
 - web forms controls
 - sind gut für provider-hosted SP Add-Ins
 
-## taxonomie context (Marko)
-
-## c sharp
+## graph taxonomie api (Marko)
 
 ## bestehende Seiten und Intranet anpassen
 
 - Layout von Objekten
 - Masterpage. Folie: ### MASTERPAGE
   - siehe auch ASP.NET Web Forms Kurs bei PPEDV > MasterPages erstellen
+- Masterpage über SPDesigner
 
-## site templates
+## web service for sites
 
 [https://naumchyk.sharepoint.com/_vti_bin/sites.asmx]
 
 ![sites operations](TRAINER/m00x-1.png)
 
 ## ausblick powerapps und flow
+
+## Migration
+
+- zugriff aus wsp (vs vorlagen) 
+- webparts / features in vs datentypen und react pakete
+- sp2019 zu spo schritte
+
+## c sharp ?
+
+## jQuery ?
+
+## sites web service
+
+- [http://hv-sharepoint/_vti_bin/sites.asmx]
+  
+bei soap - xml, kein json
+in soap kann man sicherheitsrichtlinien bei requests mitdefinieren.
