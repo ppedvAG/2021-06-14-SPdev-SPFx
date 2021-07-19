@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Mitarbeiter Einarbeitung in Berlin" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/MitarbeiterEinarbeitungInBerlin" Description="Fortschritt der Einarbeitung der neuen Mitarbeiter in Berlin.">
+	  <Data>
+		  <Rows>
+			  <Row>
+				  <Field Name="Title">Max Mustermann</Field>
+			  </Row>
+			  <Row>
+				  <Field Name="Title">Martin Mustermann</Field>
+			  </Row>
+			  <Row>
+				  <Field Name="Title">Laura Mustermann</Field>
+			  </Row>
+		  </Rows>
+	  </Data>
+  </ListInstance>	
+</Elements>

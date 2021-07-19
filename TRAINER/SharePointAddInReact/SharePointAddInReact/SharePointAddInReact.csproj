@@ -3,24 +3,24 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6EFC8823-7F2B-4BA0-B66D-737D32D15775}</ProjectGuid>
+    <ProjectGuid>{D88C2B95-0D1D-48A9-8071-7B251890AEE3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SPAddInTemplate1</RootNamespace>
-    <AssemblyName>SPAddInTemplate1</AssemblyName>
+    <RootNamespace>SharePointAddInReact</RootNamespace>
+    <AssemblyName>SharePointAddInReact</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <TargetOfficeVersion>19.0</TargetOfficeVersion>
+    <TargetOfficeVersion>16.1</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
-    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>12.2</MinimumOfficeToolsVersion>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
     <ProjectMode>SharePointApp</ProjectMode>
-    <AppFeaturePartId>{716cc8fc-505e-4b1f-a7f0-d44f9d824525}</AppFeaturePartId>
-    <WspPartId>{302f5e66-e563-4d15-82a9-d739db866063}</WspPartId>
-    <WorkflowPartId>{cbe8295b-7fa4-4df6-add7-30afb806ab95}</WorkflowPartId>
-    <CspkgPartId>{e9cb7d91-cee4-40eb-b300-44d651c91bd8}</CspkgPartId>
-    <SqlPackagePartId>{f9e30405-8687-441e-8d6f-37564a666ac7}</SqlPackagePartId>
+    <AppFeaturePartId>{46ba12c6-6b79-4bc3-9310-adc9f92d3ec8}</AppFeaturePartId>
+    <WspPartId>{95b034a5-bc9d-47c0-8570-f4d2a21c2c71}</WspPartId>
+    <WorkflowPartId>{ba7fe690-7a52-42b1-81f7-3f1a083a4fa1}</WorkflowPartId>
+    <CspkgPartId>{ffcdc169-14b7-4938-9b39-b9fe0a8dce84}</CspkgPartId>
+    <SqlPackagePartId>{f3cc9fe5-cbfc-4541-8c21-64d1aaafb904}</SqlPackagePartId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,50 +42,29 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="ContentTypes\NeuerMitarbeiter\Elements.xml" />
-    <Content Include="Lists\MitarbeiterEinarbeitung\Elements.xml" />
-    <Content Include="Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInBerlin\Elements.xml" />
-    <Content Include="Lists\MitarbeiterEinarbeitung\Schema.xml" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
-    <Content Include="SiteColumns\Abteilung\Elements.xml" />
-    <Content Include="SiteColumns\EinarbeitungFortschritt\Elements.xml" />
-    <None Include="ContentTypes\NeuerMitarbeiter\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{af121102-0560-4853-a0b7-671bfae1a7ad}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\MitarbeiterEinarbeitung\MitarbeiterEinarbeitungInBerlin\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{053cad85-1adc-4469-82cf-938f5bd43e94}</SharePointProjectItemId>
-    </None>
-    <None Include="Lists\MitarbeiterEinarbeitung\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b79f3df9-49b9-4c77-81db-f8e98f8259fa}</SharePointProjectItemId>
-    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{95ac7454-76e8-4936-abdc-6b3841020533}</SharePointProjectItemId>
+      <SharePointProjectItemId>{67675c86-06c7-48d1-89ce-47747096f2df}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
-    <None Include="SiteColumns\Abteilung\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{33839b3e-0e73-4107-b6f9-4d943c01e255}</SharePointProjectItemId>
-    </None>
-    <None Include="SiteColumns\EinarbeitungFortschritt\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{7fa32aa4-52f6-4631-9caa-137ce7d61ffd}</SharePointProjectItemId>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-3.5.0.min.map" />
     <None Include="Scripts\jquery-3.5.0.slim.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{f9e30405-8687-441e-8d6f-37564a666ac7}</SharePointProjectItemId>
+      <SharePointProjectItemId>{f3cc9fe5-cbfc-4541-8c21-64d1aaafb904}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{02be5231-0792-4274-99a3-d0ddcf7c9a04}</SharePointProjectItemId>
+      <SharePointProjectItemId>{bd0b2630-5c92-4293-9549-5434b235eb59}</SharePointProjectItemId>
     </None>
     <Content Include="Content\Elements.xml" />
     <Content Include="Content\App.css" />
@@ -96,21 +75,21 @@
     </Content>
     <Content Include="Images\Elements.xml" />
     <None Include="Images\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{6d554cc0-0f27-4341-b99f-9dd1fd822ceb}</SharePointProjectItemId>
+      <SharePointProjectItemId>{c9097ba3-b317-42e4-a39f-b90282032ec3}</SharePointProjectItemId>
     </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Package\Package.package">
-      <PackageId>{868b595f-6e9e-435b-a8fe-615a77728aba}</PackageId>
+      <PackageId>{1cadad3e-a54f-4561-b39c-2b3290be7748}</PackageId>
     </None>
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
-    <None Include="Features\NeueMitarbeitereinarbeitungKomponenten\NeueMitarbeitereinarbeitungKomponenten.feature">
-      <FeatureId>{ce0ffd00-a27a-45ff-b7ef-1b4731c60010}</FeatureId>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{12ceb7c6-affa-4638-b6a8-97121ecbecc4}</FeatureId>
     </None>
-    <None Include="Features\NeueMitarbeitereinarbeitungKomponenten\NeueMitarbeitereinarbeitungKomponenten.Template.xml">
-      <DependentUpon>NeueMitarbeitereinarbeitungKomponenten.feature</DependentUpon>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="1cadad3e-a54f-4561-b39c-2b3290be7748" 
+        solutionId="1cadad3e-a54f-4561-b39c-2b3290be7748" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SharePointAddInReact"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="12ceb7c6-affa-4638-b6a8-97121ecbecc4" />
+  </features>
+</package>
